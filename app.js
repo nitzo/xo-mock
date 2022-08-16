@@ -16,8 +16,8 @@ const userDataBase = [
     name: "Nitzan Bar",
     identification_number: "1234",
     account_number: "12345678",
-    security_answer: "Hyro AI"
-  }
+    security_answer: "Hyro AI",
+  },
 ];
 
 const getAccountBalance = (accountNumber) => {
