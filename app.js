@@ -35,7 +35,7 @@ const userDataBase = [
 ];
 
 const getAccountBalance = (accountNumber) => {
-  return "Your balance is 1000$";
+  return "Your balance is 1000$.";
 };
 
 const IsAnyPropertieNull = (obj) => Object.values(obj).some((v) => v == null);
