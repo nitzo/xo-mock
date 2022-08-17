@@ -18,6 +18,20 @@ const userDataBase = [
     account_number: "12345678",
     security_answer: "Hyro AI",
   },
+  {
+    phone: "1234567899",
+    name: "John",
+    identification_number: "1234",
+    account_number: "12345678",
+    security_answer: "School",
+  },
+  {
+    phone: "1234567899",
+    name: "Adam",
+    identification_number: "1234",
+    account_number: "12345678",
+    security_answer: "Cat",
+  },
 ];
 
 const getAccountBalance = (accountNumber) => {
