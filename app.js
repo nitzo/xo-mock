@@ -41,18 +41,14 @@ const getAccountBalance = (accountNumber) => {
 const IsAnyPropertieNull = (obj) => Object.values(obj).some((v) => v == null);
 
 const validateAuthentication = (accountDetails) =>
-  !IsAnyPropertieNull(accountDetails)
-    ? userDataBase.some(
-        (e) =>
-          Object.entries(e).toString() ===
-          Object.entries(accountDetails).toString()
+    accountDetails && userDataBase.some(
+        (e) => e.identification_number == account.identification_number
       )
-    : null;
 
 app.post("/validate-user", function ({ body }, res, next) {
   console.log(body);
   console.log("This is validate function");
-  res.status(200).json(validateAuthentication(body));
+  res.status(200).json(validateAuthentication(body) ?? null);
 });
 
 app.post("/account-balance", ({ body }, res, next) => {
