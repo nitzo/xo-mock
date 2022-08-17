@@ -48,7 +48,7 @@ const validateAuthentication = (accountDetails) =>
 app.post("/validate-user", function ({ body }, res, next) {
   console.log(body);
   console.log("This is validate function");
-  res.status(200).json(validateAuthentication(body) ?? null);
+  res.status(200).json(validateAuthentication(body) ? true : null);
 });
 
 app.post("/account-balance", ({ body }, res, next) => {
