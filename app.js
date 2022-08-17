@@ -41,7 +41,7 @@ const getAccountBalance = (accountNumber) => {
 const IsAnyPropertieNull = (obj) => Object.values(obj).some((v) => v == null);
 
 const validateAuthentication = (accountDetails) =>
-    accountDetails && userDataBase.some(
+    accountDetails && accountDetails.phone && accountDetails.name && accountDetails.account_number && accountDetails.security_answer && userDataBase.some(
         (e) => e.identification_number == accountDetails.identification_number
       )
 
