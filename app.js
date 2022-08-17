@@ -23,14 +23,14 @@ const userDataBase = [
     name: "John",
     identification_number: "1234",
     account_number: "12345678",
-    security_answer: "School",
+    security_answer: "school",
   },
   {
     phone: "1234567899",
     name: "Adam",
     identification_number: "1234",
     account_number: "12345678",
-    security_answer: "Cat",
+    security_answer: "cat",
   },
 ];
 
