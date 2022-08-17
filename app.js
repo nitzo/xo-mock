@@ -42,7 +42,7 @@ const IsAnyPropertieNull = (obj) => Object.values(obj).some((v) => v == null);
 
 const validateAuthentication = (accountDetails) =>
     accountDetails && userDataBase.some(
-        (e) => e.identification_number == account.identification_number
+        (e) => e.identification_number == accountDetails.identification_number
       )
 
 app.post("/validate-user", function ({ body }, res, next) {
